@@ -1,0 +1,92 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.statusBar {
+  background-color: #f5f5f5;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #0070f3;
+}
+
+.videoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.videoWrapper {
+  flex: 1;
+  min-width: 300px;
+}
+
+.videoElement {
+  width: 100%;
+  border-radius: 8px;
+  background-color: #000;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.controls {
+  margin-bottom: 2rem;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.button {
+  padding: 0.75rem 1.5rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #0051b3;
+}
+
+.button:active {
+  background-color: #003d8a;
+}
+
+.sdpContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.sdpBox {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sdpTextarea {
+  width: 100%;
+  height: 150px;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: monospace;
+  resize: vertical;
+}
+
+@media (max-width: 768px) {
+  .videoContainer,
+  .sdpContainer {
+    flex-direction: column;
+  }
+} 
